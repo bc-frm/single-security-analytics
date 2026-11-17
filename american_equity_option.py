@@ -12,7 +12,7 @@ def bs_call(S, K, T, r, q, sigma):
     return S * exp(-q * T) * norm_cdf(d1) - K * exp(-r * T) * norm_cdf(d2)
 
 # ----------------------------------------------------------------------
-# Corrected binomial tree (high-to-low ordering fixed)
+# binomial tree (high-to-low ordering fixed)
 # ----------------------------------------------------------------------
 def american_call_binomial(S, K, T, r, q, sigma, N=400):
     if T <= 0:
